@@ -1,0 +1,22 @@
+{
+  "name": "api-estado-de-animo",
+  "version": "1.0.0",
+  "description": "proyecto orientado al aprendizaje de nodejs y despliegue del mismo a produccion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaelliot/api-Estado-de-animo.git"
+  },
+  "author": "joshua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuaelliot/api-Estado-de-animo/issues"
+  },
+  "homepage": "https://github.com/joshuaelliot/api-Estado-de-animo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
