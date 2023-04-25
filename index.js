@@ -9,7 +9,7 @@ const app= express();
 const PORT = process.env.PORT|| 4000;
 
 app.get("/",(require,response)=>{
-    response.send("estamos vivos")
+    response.send("Bienvenido a mi API  de informacion de jugadores top de futbol")
 })
 app.get("/jugadores",(require,response)=>{
     fs.readFile(__dirname+"/jugadores.json","utf-8",(err,data)=>{
