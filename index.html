@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LLAMANDO A MI API JUGADORES</h1>
+    <script>
+        // Realizar una solicitud GET a una API y manejar la respuesta
+        fetch('https://api-jugadores.onrender.com/jugadores')
+.then(response => {
+  // No se puede acceder a los datos de la respuesta debido a 'mode: no-cors'
+  //console.log('Respuesta opaca', response);
+  return response.json()
+})
+.then(response=>{
+    console.log(response)
+})
+.catch(error => {
+  console.error('Error en la solicitud', error);
+});
+    </script>
+</body>
+</html>

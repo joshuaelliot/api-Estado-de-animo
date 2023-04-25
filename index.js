@@ -1,13 +1,13 @@
 const dotenv= require("dotenv");
 
 dotenv.config();
-
+const cors = require("cors");
 const fs= require("fs")
 const express = require("express");
 const app= express();
 
 const PORT = process.env.PORT|| 4000;
-
+app.use(cors());
 app.get("/",(require,response)=>{
     response.send("Bienvenido a mi API  de informacion de jugadores top de futbol")
 })
